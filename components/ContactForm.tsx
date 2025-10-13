@@ -2,12 +2,13 @@
 
 import { motion } from "framer-motion"
 import { useForm } from "react-hook-form"
+import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { ArrowRight } from "lucide-react"
+import { ArrowRight, CheckCircle, AlertCircle } from "lucide-react"
 
 type FormData = {
   name: string
@@ -18,6 +19,9 @@ type FormData = {
 }
 
 export default function ContactForm() {
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<"success" | "error" | null>(null)
+
   const {
     register,
     handleSubmit,
@@ -25,10 +29,41 @@ export default function ContactForm() {
     reset,
   } = useForm<FormData>()
 
-  const onSubmit = (data: FormData) => {
-    console.log("Form submitted:", data)
-    alert("Thank you for your inquiry! We'll be in touch soon.")
-    reset()
+  const onSubmit = async (data: FormData) => {
+    setIsSubmitting(true)
+    setSubmitStatus(null)
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      })
+
+      if (!response.ok) {
+        throw new Error("Failed to send message")
+      }
+
+      setSubmitStatus("success")
+      reset()
+
+      // Clear success message after 5 seconds
+      setTimeout(() => {
+        setSubmitStatus(null)
+      }, 5000)
+    } catch (error) {
+      console.error("Error submitting form:", error)
+      setSubmitStatus("error")
+
+      // Clear error message after 5 seconds
+      setTimeout(() => {
+        setSubmitStatus(null)
+      }, 5000)
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -163,13 +198,42 @@ export default function ContactForm() {
                   </p>
                 </div>
 
+                {/* Success/Error Messages */}
+                {submitStatus === "success" && (
+                  <div className="flex items-center gap-3 p-4 bg-green-50 border border-green-200 rounded-lg text-green-800">
+                    <CheckCircle className="w-5 h-5 flex-shrink-0" />
+                    <p className="text-sm font-medium">
+                      Thank you for your inquiry! We&apos;ll be in touch soon.
+                    </p>
+                  </div>
+                )}
+
+                {submitStatus === "error" && (
+                  <div className="flex items-center gap-3 p-4 bg-red-50 border border-red-200 rounded-lg text-red-800">
+                    <AlertCircle className="w-5 h-5 flex-shrink-0" />
+                    <p className="text-sm font-medium">
+                      Something went wrong. Please try again or email us directly.
+                    </p>
+                  </div>
+                )}
+
                 <Button
                   type="submit"
                   size="lg"
-                  className="w-full group h-14 text-lg bg-primary hover:bg-primary/90"
+                  disabled={isSubmitting}
+                  className="w-full group h-14 text-lg bg-primary hover:bg-primary/90 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  Send Message
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  {isSubmitting ? (
+                    <>
+                      <span className="mr-2">Sending...</span>
+                      <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                    </>
+                  ) : (
+                    <>
+                      Send Message
+                      <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                    </>
+                  )}
                 </Button>
               </form>
             </CardContent>
