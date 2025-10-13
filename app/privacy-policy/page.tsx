@@ -34,7 +34,7 @@ export default function PrivacyPolicy() {
           <div className="prose prose-lg max-w-none space-y-8">
             <section>
               <p className="text-gray-700 leading-relaxed">
-                Robra IT ("we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and protect your personal information, including data related to SMS and messaging through 10-digit long codes (10DLC).
+                Robra IT (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and protect your personal information, including data related to SMS and messaging through 10-digit long codes (10DLC).
               </p>
               <p className="text-gray-700 leading-relaxed mt-4">
                 If you have questions about this Privacy Policy or your data, please contact us at:
