@@ -28,7 +28,7 @@ const stats = [
 
 export default function Trust() {
   return (
-    <section className="py-24 bg-gradient-to-br from-primary via-primary to-primary/90 relative overflow-hidden">
+    <section className="py-16 sm:py-20 md:py-24 bg-gradient-to-br from-primary via-primary to-primary/90 relative overflow-hidden">
       {/* Enhanced decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-white/5 rounded-full filter blur-3xl"></div>
@@ -38,23 +38,23 @@ export default function Trust() {
         </div>
       </div>
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-10 sm:mb-12 md:mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-5 leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-3 sm:mb-4 md:mb-5 leading-tight px-4">
             Trusted by Forward-Thinking IT Teams Nationwide
           </h2>
-          <p className="text-gray-100 text-xl max-w-2xl mx-auto font-medium">
+          <p className="text-gray-100 text-base sm:text-lg md:text-xl max-w-2xl mx-auto font-medium px-4">
             Delivering excellence in IT staffing with proven results
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {stats.map((stat, index) => {
             const Icon = stat.icon
             return (
@@ -66,11 +66,11 @@ export default function Trust() {
                 viewport={{ once: true }}
                 className="text-center group h-full"
               >
-                <div className="h-full min-h-[280px] flex flex-col items-center justify-center p-6 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 group-hover:bg-white/15 group-hover:border-white/30 group-hover:shadow-2xl group-hover:-translate-y-1 transition-all duration-300">
+                <div className="h-full min-h-[200px] sm:min-h-[240px] md:min-h-[280px] flex flex-col items-center justify-center p-6 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 group-hover:bg-white/15 group-hover:border-white/30 group-hover:shadow-2xl group-hover:-translate-y-1 transition-all duration-300">
                   <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-sm flex items-center justify-center border border-white/30 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-xl flex-shrink-0">
                     <Icon className="w-8 h-8 text-white" />
                   </div>
-                  <div className="text-5xl font-black text-white mb-3 group-hover:scale-110 transition-transform duration-300">
+                  <div className="text-4xl sm:text-5xl font-black text-white mb-3 group-hover:scale-110 transition-transform duration-300">
                     {stat.value}
                   </div>
                   <div className="text-sm text-gray-100 font-semibold tracking-wide leading-tight">

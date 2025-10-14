@@ -30,30 +30,30 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="py-32 bg-gradient-to-b from-white via-gray-50/50 to-white relative overflow-hidden">
+    <section id="how-it-works" className="py-16 sm:py-24 md:py-32 bg-gradient-to-b from-white via-gray-50/50 to-white relative overflow-hidden">
       {/* Decorative background */}
       <div className="absolute inset-0 overflow-hidden opacity-30">
         <div className="absolute top-40 left-1/4 w-72 h-72 bg-accent/20 rounded-full filter blur-3xl"></div>
         <div className="absolute bottom-20 right-1/4 w-96 h-96 bg-primary/10 rounded-full filter blur-3xl"></div>
       </div>
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-20"
+          className="text-center mb-12 sm:mb-16 md:mb-20"
         >
-          <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-accent/15 to-accent/5 rounded-full text-accent text-sm font-bold mb-6 border border-accent/30 shadow-md">
+          <div className="inline-flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 bg-gradient-to-r from-accent/15 to-accent/5 rounded-full text-accent text-xs sm:text-sm font-bold mb-4 sm:mb-6 border border-accent/30 shadow-md">
             <span className="w-2 h-2 bg-accent rounded-full"></span>
             Our Process
           </div>
 
-          <h2 className="text-5xl md:text-6xl font-extrabold text-gray-900 mb-6 leading-[1.1]">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-4 sm:mb-6 leading-[1.1]">
             How It <span className="bg-gradient-to-r from-accent to-accent/70 bg-clip-text text-transparent">Works</span>
           </h2>
-          <p className="text-xl text-gray-700 max-w-2xl mx-auto leading-relaxed font-medium">
+          <p className="text-base sm:text-lg md:text-xl text-gray-700 max-w-2xl mx-auto leading-relaxed font-medium px-4">
             Three simple steps to building your dream IT team
           </p>
         </motion.div>

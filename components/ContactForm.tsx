@@ -67,23 +67,23 @@ export default function ContactForm() {
   }
 
   return (
-    <section id="contact" className="py-32 bg-gray-50 relative overflow-hidden">
-      <div className="container mx-auto px-6 relative z-10">
+    <section id="contact" className="py-16 sm:py-24 md:py-32 bg-gray-50 relative overflow-hidden">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-10 sm:mb-12 md:mb-16"
         >
-          <div className="inline-block px-4 py-2 bg-primary/10 rounded-full text-primary text-sm font-semibold mb-6">
+          <div className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 bg-primary/10 rounded-full text-primary text-xs sm:text-sm font-semibold mb-4 sm:mb-6">
             Get In Touch
           </div>
 
-          <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6 px-4">
             Let&apos;s <span className="text-primary">Connect</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed px-4">
             Ready to find your next IT talent? Get in touch with us today and let&apos;s discuss your staffing needs.
           </p>
         </motion.div>
@@ -96,10 +96,10 @@ export default function ContactForm() {
           className="max-w-3xl mx-auto"
         >
           <Card className="border-gray-200 shadow-xl bg-white">
-            <CardHeader className="pb-6">
-              <CardTitle className="text-3xl text-center">Send us a message</CardTitle>
+            <CardHeader className="pb-4 sm:pb-6 pt-6 sm:pt-8">
+              <CardTitle className="text-2xl sm:text-3xl text-center">Send us a message</CardTitle>
             </CardHeader>
-            <CardContent className="p-8">
+            <CardContent className="p-4 sm:p-6 md:p-8">
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">

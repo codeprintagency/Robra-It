@@ -8,12 +8,12 @@ export default function PrivacyPolicy() {
   return (
     <main className="min-h-screen bg-white">
       {/* Header spacer */}
-      <div className="h-24" />
+      <div className="h-16 sm:h-20 md:h-24" />
 
-      <div className="container mx-auto px-6 py-16 max-w-4xl">
+      <div className="container mx-auto px-4 sm:px-6 py-8 sm:py-12 md:py-16 max-w-4xl">
         <Link
           href="/"
-          className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors mb-8 font-semibold"
+          className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors mb-6 sm:mb-8 font-semibold text-sm sm:text-base"
         >
           <ArrowLeft className="w-4 h-4" />
           Back to Home
@@ -24,10 +24,10 @@ export default function PrivacyPolicy() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
             Privacy Policy
           </h1>
-          <p className="text-gray-600 mb-8">
+          <p className="text-sm sm:text-base text-gray-600 mb-6 sm:mb-8">
             Effective Date: January 1, 2025
           </p>
 

@@ -33,15 +33,15 @@ const services = [
 
 export default function About() {
   return (
-    <section id="about" className="py-32 bg-gradient-to-b from-white via-gray-50 to-white relative overflow-hidden">
+    <section id="about" className="py-16 sm:py-24 md:py-32 bg-gradient-to-b from-white via-gray-50 to-white relative overflow-hidden">
       {/* Decorative background elements */}
       <div className="absolute inset-0 overflow-hidden opacity-40">
         <div className="absolute top-20 right-10 w-64 h-64 bg-primary/10 rounded-full filter blur-3xl"></div>
         <div className="absolute bottom-20 left-10 w-80 h-80 bg-accent/15 rounded-full filter blur-3xl"></div>
       </div>
 
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start max-w-7xl mx-auto">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12 lg:gap-16 items-start max-w-7xl mx-auto">
           {/* Left: Text content */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -55,12 +55,12 @@ export default function About() {
               Our Services
             </div>
 
-            <h2 className="text-5xl md:text-6xl font-extrabold text-gray-900 mb-6 leading-[1.1]">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-4 sm:mb-6 leading-[1.1]">
               Modern IT Staffing.{" "}
               <span className="bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">Simplified.</span>
             </h2>
 
-            <p className="text-xl text-gray-700 leading-relaxed mb-8 font-medium">
+            <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed mb-6 sm:mb-8 font-medium">
               We specialize in connecting businesses with exceptional IT talent
               across multiple engagement models. Our approach combines cutting-edge
               recruitment technology with deep industry expertise.

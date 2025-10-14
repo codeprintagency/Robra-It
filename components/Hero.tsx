@@ -60,7 +60,7 @@ export default function Hero() {
         />
       </div>
 
-      <div className="container mx-auto px-6 relative z-10 pt-20">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10 pt-16 sm:pt-20">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -71,9 +71,9 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="mb-6"
+            className="mb-4 sm:mb-6"
           >
-            <span className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-primary/10 via-primary/5 to-accent/10 rounded-full text-primary text-sm font-bold border border-primary/20 shadow-lg backdrop-blur-sm">
+            <span className="inline-flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 bg-gradient-to-r from-primary/10 via-primary/5 to-accent/10 rounded-full text-primary text-xs sm:text-sm font-bold border border-primary/20 shadow-lg backdrop-blur-sm">
               <span className="w-2 h-2 bg-primary rounded-full animate-pulse"></span>
               Premium IT Staffing Solutions
             </span>
@@ -83,7 +83,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-gray-900 mb-8 leading-[1.1] tracking-tight"
+            className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold text-gray-900 mb-6 sm:mb-8 leading-[1.1] tracking-tight px-2"
           >
             Empowering Businesses with{" "}
             <span className="bg-gradient-to-r from-primary via-primary/90 to-primary/80 bg-clip-text text-transparent drop-shadow-sm">
@@ -95,7 +95,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.7 }}
-            className="text-xl md:text-2xl text-gray-700 mb-12 leading-relaxed max-w-3xl mx-auto font-medium"
+            className="text-lg sm:text-xl md:text-2xl text-gray-700 mb-8 sm:mb-12 leading-relaxed max-w-3xl mx-auto font-medium px-2"
           >
             Robra IT connects companies with top-tier technology professionals —
             delivering flexible staffing solutions for your projects, teams, and
@@ -106,12 +106,12 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.9 }}
-            className="flex flex-col sm:flex-row gap-5 justify-center items-center"
+            className="flex flex-col sm:flex-row gap-3 sm:gap-5 justify-center items-center px-4"
           >
             <Button
               onClick={scrollToContact}
               size="lg"
-              className="text-lg px-12 py-7 group bg-gradient-to-r from-primary to-primary/90 hover:shadow-2xl hover:shadow-primary/40 hover:scale-105 transition-all duration-300 font-semibold"
+              className="w-full sm:w-auto text-base sm:text-lg px-8 sm:px-12 py-6 sm:py-7 group bg-gradient-to-r from-primary to-primary/90 hover:shadow-2xl hover:shadow-primary/40 hover:scale-105 transition-all duration-300 font-semibold"
             >
               Get Started
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -123,7 +123,7 @@ export default function Hero() {
               }}
               size="lg"
               variant="outline"
-              className="text-lg px-12 py-7 border-2 border-gray-300 hover:border-primary hover:text-primary hover:bg-primary/5 hover:shadow-lg transition-all duration-300 font-semibold"
+              className="w-full sm:w-auto text-base sm:text-lg px-8 sm:px-12 py-6 sm:py-7 border-2 border-gray-300 hover:border-primary hover:text-primary hover:bg-primary/5 hover:shadow-lg transition-all duration-300 font-semibold"
             >
               Learn More
             </Button>
