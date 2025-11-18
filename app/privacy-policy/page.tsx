@@ -127,6 +127,16 @@ export default function PrivacyPolicy() {
               <p className="text-gray-700 leading-relaxed mb-4">
                 Robra IT does not sell, rent, or share personal information or SMS opt-in data for marketing purposes.
               </p>
+
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                SMS/Text Messaging Data Protection
+              </h3>
+              <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-4">
+                <p className="text-gray-700 leading-relaxed font-semibold">
+                  No mobile information will be shared with third parties/affiliates for marketing/promotional purposes. All other categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.
+                </p>
+              </div>
+
               <p className="text-gray-700 leading-relaxed mb-4">
                 We may share information only with:
               </p>

@@ -191,10 +191,28 @@ export default function ContactForm() {
 
                 <div className="bg-blue-50 border border-blue-100 rounded-xl p-6">
                   <p className="text-xs text-gray-600 leading-relaxed mb-3">
-                    By providing your phone number and submitting this form, you consent to receive SMS messages from Robra IT related to your inquiry. Message and data rates may apply. You can reply STOP to unsubscribe or HELP for help. Your consent is not a condition of purchase.
+                    By providing your phone number and submitting this form, you consent to receive SMS messages from Robra IT related to your inquiry.
                   </p>
-                  <p className="text-xs text-gray-600 leading-relaxed font-semibold">
+                  <ul className="text-xs text-gray-600 leading-relaxed mb-3 space-y-1 list-disc list-inside">
+                    <li><strong>Message and data rates may apply.</strong></li>
+                    <li><strong>Message frequency may vary.</strong></li>
+                    <li>You can reply <strong>STOP</strong> to unsubscribe or <strong>HELP</strong> for help.</li>
+                    <li>Your consent is not a condition of purchase.</li>
+                  </ul>
+                  <p className="text-xs text-gray-600 leading-relaxed mb-2 font-semibold">
                     Robra IT does not sell or share SMS opt-in data or consent with third parties or affiliates for marketing purposes.
+                  </p>
+                  <p className="text-xs text-gray-600 leading-relaxed">
+                    For more information, see our{" "}
+                    <a
+                      href="/privacy-policy"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary hover:text-primary/80 underline font-semibold"
+                    >
+                      Privacy Policy
+                    </a>
+                    .
                   </p>
                 </div>
 
