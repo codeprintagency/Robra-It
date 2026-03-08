@@ -1,7 +1,7 @@
 import Header from "@/components/Header"
 import Hero from "@/components/Hero"
-import About from "@/components/About"
-import HowItWorks from "@/components/HowItWorks"
+import Services from "@/components/Services"
+import RobraDifference from "@/components/RobraDifference"
 import Trust from "@/components/Trust"
 import ContactForm from "@/components/ContactForm"
 import Footer from "@/components/Footer"
@@ -11,8 +11,8 @@ export default function Home() {
     <main className="min-h-screen">
       <Header />
       <Hero />
-      <About />
-      <HowItWorks />
+      <Services />
+      <RobraDifference />
       <Trust />
       <ContactForm />
       <Footer />

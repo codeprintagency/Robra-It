@@ -1,28 +1,28 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Shield, Award, Users2, TrendingUp } from "lucide-react"
+import { Shield, Award, TrendingUp, CheckCircle } from "lucide-react"
 
 const stats = [
   {
-    icon: Users2,
-    value: "500+",
-    label: "IT Professionals Placed",
+    icon: TrendingUp,
+    value: "200+",
+    label: "Transformations Delivered",
   },
   {
     icon: Award,
-    value: "98%",
-    label: "Client Satisfaction",
-  },
-  {
-    icon: TrendingUp,
-    value: "10+",
-    label: "Years Experience",
+    value: "95%+",
+    label: "On-Time Delivery Rate",
   },
   {
     icon: Shield,
-    value: "100%",
-    label: "Vetted Candidates",
+    value: "10+",
+    label: "Years Enterprise Expertise",
+  },
+  {
+    icon: CheckCircle,
+    value: "E2E",
+    label: "End-to-End Execution",
   },
 ]
 
@@ -50,7 +50,7 @@ export default function Trust() {
             Trusted by Forward-Thinking IT Teams Nationwide
           </h2>
           <p className="text-gray-100 text-base sm:text-lg md:text-xl max-w-2xl mx-auto font-medium px-4">
-            Delivering excellence in IT staffing with proven results
+            Delivering enterprise transformation with proven results
           </p>
         </motion.div>
 

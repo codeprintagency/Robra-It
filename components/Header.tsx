@@ -75,7 +75,7 @@ export default function Header() {
           </li>
           <li>
             <button
-              onClick={() => scrollToSection("how-it-works")}
+              onClick={() => scrollToSection("services")}
               className="text-gray-700 hover:text-primary transition-all duration-200 font-semibold text-sm tracking-wide relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all hover:after:w-full"
             >
               Services
@@ -135,7 +135,7 @@ export default function Header() {
                 </li>
                 <li>
                   <button
-                    onClick={() => scrollToSection("how-it-works")}
+                    onClick={() => scrollToSection("services")}
                     className="block w-full text-left text-gray-700 hover:text-primary transition-colors font-semibold py-2"
                   >
                     Services

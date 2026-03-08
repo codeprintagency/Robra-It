@@ -10,19 +10,19 @@ const ubuntu = Ubuntu({
 })
 
 export const metadata: Metadata = {
-  title: "Robra IT | Modern IT Staffing Solutions",
-  description: "Empowering businesses with world-class IT talent. Robra IT connects companies with top-tier technology professionals — delivering flexible staffing solutions for your projects, teams, and long-term growth.",
+  title: "Robra IT | IT Solutions, AMS & Data Services",
+  description: "From enterprise application management to AI governance and data modernization — Robra IT deploys right-sized expert teams to execute transformation that sticks.",
   keywords: [
-    "IT staffing",
-    "technology recruitment",
-    "contract staffing",
-    "direct hire",
-    "managed services",
-    "remote talent",
+    "IT solutions",
+    "application managed services",
+    "data services",
+    "AI advisory",
+    "enterprise integration",
     "IT consulting",
-    "software developers",
-    "IT professionals",
-    "staffing solutions"
+    "digital transformation",
+    "professional project services",
+    "enterprise data platform",
+    "technology rationalization"
   ],
   authors: [{ name: "Robra IT" }],
   creator: "Robra IT",
@@ -31,14 +31,14 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://robrait.com",
-    title: "Robra IT | Modern IT Staffing Solutions",
-    description: "Empowering businesses with world-class IT talent. Flexible staffing solutions for your projects, teams, and long-term growth.",
+    title: "Robra IT | IT Solutions, AMS & Data Services",
+    description: "From enterprise application management to AI governance and data modernization — Robra IT deploys right-sized expert teams to execute transformation that sticks.",
     siteName: "Robra IT",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Robra IT | Modern IT Staffing Solutions",
-    description: "Empowering businesses with world-class IT talent. Flexible staffing solutions for your projects, teams, and long-term growth.",
+    title: "Robra IT | IT Solutions, AMS & Data Services",
+    description: "From enterprise application management to AI governance and data modernization — Robra IT deploys right-sized expert teams to execute transformation that sticks.",
   },
   robots: {
     index: true,

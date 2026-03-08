@@ -84,7 +84,7 @@ export default function ContactForm() {
             Let&apos;s <span className="text-primary">Connect</span>
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed px-4">
-            Ready to find your next IT talent? Get in touch with us today and let&apos;s discuss your staffing needs.
+            Ready to explore how Robra IT can accelerate your next initiative? Get in touch and let&apos;s discuss your goals.
           </p>
         </motion.div>
 
@@ -177,7 +177,7 @@ export default function ContactForm() {
                   <Label htmlFor="message" className="text-gray-700 font-medium">Message *</Label>
                   <Textarea
                     id="message"
-                    placeholder="Tell us about your staffing needs..."
+                    placeholder="Tell us about your project or initiative..."
                     rows={6}
                     className="focus:ring-2 focus:ring-primary/20 resize-none border-gray-300"
                     {...register("message", { required: "Message is required" })}

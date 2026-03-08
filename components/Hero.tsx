@@ -75,7 +75,7 @@ export default function Hero() {
           >
             <span className="inline-flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 bg-gradient-to-r from-primary/10 via-primary/5 to-accent/10 rounded-full text-primary text-xs sm:text-sm font-bold border border-primary/20 shadow-lg backdrop-blur-sm">
               <span className="w-2 h-2 bg-primary rounded-full animate-pulse"></span>
-              Premium IT Staffing Solutions
+              IT Solutions & Enterprise Services
             </span>
           </motion.div>
 
@@ -85,9 +85,9 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.5 }}
             className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold text-gray-900 mb-6 sm:mb-8 leading-[1.1] tracking-tight px-2"
           >
-            Empowering Businesses with{" "}
+            IT Solutions Built for{" "}
             <span className="bg-gradient-to-r from-primary via-primary/90 to-primary/80 bg-clip-text text-transparent drop-shadow-sm">
-              World-Class IT Talent
+              How Business Actually Works
             </span>
           </motion.h1>
 
@@ -97,9 +97,9 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.7 }}
             className="text-lg sm:text-xl md:text-2xl text-gray-700 mb-8 sm:mb-12 leading-relaxed max-w-3xl mx-auto font-medium px-2"
           >
-            Robra IT connects companies with top-tier technology professionals —
-            delivering flexible staffing solutions for your projects, teams, and
-            long-term growth.
+            From enterprise application management to AI governance and data
+            modernization — Robra IT deploys right-sized expert teams to execute
+            transformation that sticks.
           </motion.p>
 
           <motion.div
@@ -109,23 +109,23 @@ export default function Hero() {
             className="flex flex-col sm:flex-row gap-3 sm:gap-5 justify-center items-center px-4"
           >
             <Button
-              onClick={scrollToContact}
+              onClick={() => {
+                const element = document.getElementById("services")
+                element?.scrollIntoView({ behavior: "smooth" })
+              }}
               size="lg"
               className="w-full sm:w-auto text-base sm:text-lg px-8 sm:px-12 py-6 sm:py-7 group bg-gradient-to-r from-primary to-primary/90 hover:shadow-2xl hover:shadow-primary/40 hover:scale-105 transition-all duration-300 font-semibold"
             >
-              Get Started
+              Explore Our Services
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button
-              onClick={() => {
-                const element = document.getElementById("about")
-                element?.scrollIntoView({ behavior: "smooth" })
-              }}
+              onClick={scrollToContact}
               size="lg"
               variant="outline"
               className="w-full sm:w-auto text-base sm:text-lg px-8 sm:px-12 py-6 sm:py-7 border-2 border-gray-300 hover:border-primary hover:text-primary hover:bg-primary/5 hover:shadow-lg transition-all duration-300 font-semibold"
             >
-              Learn More
+              Let&apos;s Talk
             </Button>
           </motion.div>
         </motion.div>
@@ -138,7 +138,7 @@ export default function Hero() {
         transition={{ duration: 1, delay: 1.5 }}
         className="absolute bottom-10 left-1/2 transform -translate-x-1/2 cursor-pointer group"
         onClick={() => {
-          const element = document.getElementById("about")
+          const element = document.getElementById("services")
           element?.scrollIntoView({ behavior: "smooth" })
         }}
       >
