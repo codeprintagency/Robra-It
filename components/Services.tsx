@@ -9,7 +9,6 @@ import {
   Database,
   BrainCircuit,
   Compass,
-  ArrowRight,
 } from "lucide-react"
 
 const practices = [
@@ -18,42 +17,36 @@ const practices = [
     title: "PPS — Professional Project Services",
     description:
       "Right-sized tactical project teams embedded to execute defined transformation initiatives — without the SOW fluff.",
-    cta: "Learn More",
   },
   {
     icon: Settings,
     title: "AMS — Application Managed Services",
     description:
       "Ongoing management, optimization, and support of enterprise applications post-go-live across Workday, SAP, Oracle, Salesforce, and more.",
-    cta: "Learn More",
   },
   {
     icon: Link2,
     title: "Integration Solutions",
     description:
       "End-to-end integration architecture, build, and management across enterprise ecosystems — API design, middleware, and platform-agnostic execution.",
-    cta: "Learn More",
   },
   {
     icon: Database,
     title: "Data Services & EDP",
     description:
       "Modern data strategy, architecture, engineering, and analytics delivery — from raw data to governed insight using Databricks, Power BI, Alteryx, and more.",
-    cta: "Learn More",
   },
   {
     icon: BrainCircuit,
     title: "AI Advisory & Governance",
     description:
       "Structured AI adoption — from strategy through deployment — with guardrails that actually work. Readiness assessments, governance frameworks, and execution support.",
-    cta: "Learn More",
   },
   {
     icon: Compass,
     title: "Advisory & Transformation",
     description:
       "Assessment services, PMO & governance, technology rationalization, M&A support, and lean team deployment — the umbrella practice that underpins everything we do.",
-    cta: "Learn More",
   },
 ]
 
@@ -115,14 +108,10 @@ export default function Services() {
                       {practice.title}
                     </CardTitle>
                   </CardHeader>
-                  <CardContent className="flex flex-col flex-1">
-                    <p className="text-gray-600 leading-relaxed text-sm mb-6 flex-1">
+                  <CardContent>
+                    <p className="text-gray-600 leading-relaxed text-sm">
                       {practice.description}
                     </p>
-                    <div className="flex items-center text-primary font-semibold text-sm group-hover:gap-2 transition-all duration-300">
-                      {practice.cta}
-                      <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform duration-300" />
-                    </div>
                   </CardContent>
                 </Card>
               </motion.div>

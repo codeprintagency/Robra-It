@@ -39,21 +39,6 @@ export default function Trust() {
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="text-center mb-10 sm:mb-12 md:mb-16"
-        >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-3 sm:mb-4 md:mb-5 leading-tight px-4">
-            Trusted by Forward-Thinking IT Teams Nationwide
-          </h2>
-          <p className="text-gray-100 text-base sm:text-lg md:text-xl max-w-2xl mx-auto font-medium px-4">
-            Delivering enterprise transformation with proven results
-          </p>
-        </motion.div>
-
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {stats.map((stat, index) => {
             const Icon = stat.icon
