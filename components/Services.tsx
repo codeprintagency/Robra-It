@@ -16,37 +16,37 @@ const practices = [
     icon: Rocket,
     title: "Professional Project Services",
     description:
-      "Whether you need a single multi-functional consultant or a full project team, we scale to fit. From roadmapping through execution, our specialists deliver results across any technology stack, supporting both domestic and global rollouts.",
+      "Whether you need a specialized consultant or a full project team, we provide support that matches your requirements. From planning through execution, our professionals help keep initiatives on track across systems, functions, and geographies.",
   },
   {
     icon: Settings,
     title: "Application Managed Services",
     description:
-      "Ongoing management, optimization, and support of enterprise applications post-go-live across Workday, SAP, Oracle, Salesforce, and more.",
+      "We provide ongoing support, optimization, and operational management for enterprise applications after go live. Our team helps organizations improve performance, maintain stability, and get more value from platforms such as Workday, SAP, Oracle, Salesforce, and others.",
   },
   {
     icon: Link2,
     title: "Integration Solutions",
     description:
-      "Full-lifecycle integration architecture, build, and management across your enterprise. API design, middleware orchestration, and platform-agnostic connectivity.",
+      "We design, build, and support integrations that connect critical systems across your business. From API strategy to middleware and ongoing management, we help create reliable connectivity across your environment.",
   },
   {
     icon: Database,
-    title: "Data & Reporting Services",
+    title: "Data and Reporting Services",
     description:
-      "Modern data strategy, architecture, engineering, and reporting delivery. From raw data to governed insight using Databricks, Power BI, Alteryx, and more.",
+      "We help organizations turn fragmented data into clear reporting and useful insight. Our team supports modern data strategy, architecture, engineering, and visualization across platforms such as Databricks, Power BI, Alteryx, and more.",
   },
   {
     icon: BrainCircuit,
-    title: "AI Advisory & Governance",
+    title: "AI Advisory and Governance",
     description:
-      "Structured AI adoption from strategy through deployment, with governance that works in practice. Readiness assessments, framework design, and hands-on execution support.",
+      "We help organizations approach AI with structure and accountability. From readiness assessments and governance frameworks to implementation support, we guide practical adoption that aligns with business and compliance needs.",
   },
   {
     icon: Compass,
-    title: "Advisory & Transformation",
+    title: "Advisory and Transformation",
     description:
-      "OCM advisory, roadmapping, PMO & governance, technology rationalization, and M&A support for domestic and global initiatives. Tech-agnostic, outcome-driven, and built to move.",
+      "We support transformation efforts with strategic advisory, roadmapping, PMO support, governance, technology rationalization, and M&A execution support. Our work is grounded in business priorities and built for real-world delivery.",
   },
 ]
 
@@ -76,15 +76,15 @@ export default function Services() {
           </div>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-4 sm:mb-6 leading-[1.1]">
-            Enterprise IT.{" "}
+            Enterprise IT services with{" "}
             <span className="bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
-              Executed Right.
+              practical execution
             </span>
           </h2>
 
           <p className="text-base sm:text-lg md:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed font-medium px-4">
-            Six practice areas built around what enterprise IT teams actually need.
-            Tech-agnostic roadmapping and execution, lean teams, and measurable outcomes.
+            We support the initiatives that matter most to enterprise IT teams with
+            focused expertise, clear delivery, and flexible engagement models.
           </p>
         </motion.div>
 
