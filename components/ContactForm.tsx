@@ -189,7 +189,7 @@ export default function ContactForm() {
                   )}
                 </div>
 
-                <div className="bg-blue-50 border border-blue-100 rounded-xl p-6">
+                <div className="bg-blue-50 border border-blue-100 rounded-xl p-4 sm:p-6">
                   <p className="text-xs text-gray-600 leading-relaxed mb-3">
                     By providing your phone number and submitting this form, you consent to receive SMS messages from Robra IT related to your inquiry.
                   </p>

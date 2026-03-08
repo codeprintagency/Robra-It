@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300 relative overflow-hidden">
-      <div className="container mx-auto px-6 py-16 relative z-10">
+      <div className="container mx-auto px-6 py-10 sm:py-16 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -14,7 +14,7 @@ export default function Footer() {
           className="max-w-4xl mx-auto"
         >
           {/* Company name and tagline */}
-          <div className="text-center mb-12">
+          <div className="text-center mb-8 sm:mb-12">
             <h3 className="text-2xl font-bold text-white mb-4">Robra IT</h3>
             <p className="text-gray-400 text-sm max-w-md mx-auto">
               Your business, our expertise — deploying right-sized teams to execute transformation that sticks

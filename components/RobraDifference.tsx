@@ -57,7 +57,7 @@ export default function RobraDifference() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
           {differentiators.map((item, index) => {
             const Icon = item.icon
             return (
@@ -69,16 +69,16 @@ export default function RobraDifference() {
                 viewport={{ once: true }}
                 className="relative"
               >
-                <div className="relative border-2 border-gray-200 bg-white h-full rounded-2xl overflow-hidden hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-2 transition-all duration-300 group p-8">
-                  <div className="flex items-start justify-between mb-6">
-                    <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center shadow-xl group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
-                      <Icon className="w-10 h-10 text-white" />
+                <div className="relative border-2 border-gray-200 bg-white h-full rounded-2xl overflow-hidden hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-2 transition-all duration-300 group p-6 sm:p-8">
+                  <div className="flex items-start justify-between mb-4 sm:mb-6">
+                    <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center shadow-xl group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                      <Icon className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
                     </div>
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-primary transition-colors duration-300">
+                  <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4 group-hover:text-primary transition-colors duration-300">
                     {item.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed text-base">
+                  <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
                     {item.description}
                   </p>
                 </div>
