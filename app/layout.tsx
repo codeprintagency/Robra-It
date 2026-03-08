@@ -10,7 +10,7 @@ const ubuntu = Ubuntu({
 })
 
 export const metadata: Metadata = {
-  title: "Robra IT | IT Solutions, AMS & Data Services",
+  title: "Robra IT | IT Solutions/PPS & AMS Services",
   description: "Robra IT delivers IT Solutions, Professional Project Services (PPS), and Application Managed Services (AMS) for enterprise organizations. Right-sized expert teams that execute on your goals.",
   keywords: [
     "IT solutions",
@@ -31,13 +31,13 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://robrait.com",
-    title: "Robra IT | IT Solutions, AMS & Data Services",
+    title: "Robra IT | IT Solutions/PPS & AMS Services",
     description: "Robra IT delivers IT Solutions, Professional Project Services (PPS), and Application Managed Services (AMS) for enterprise organizations. Right-sized expert teams that execute on your goals.",
     siteName: "Robra IT",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Robra IT | IT Solutions, AMS & Data Services",
+    title: "Robra IT | IT Solutions/PPS & AMS Services",
     description: "Robra IT delivers IT Solutions, Professional Project Services (PPS), and Application Managed Services (AMS) for enterprise organizations. Right-sized expert teams that execute on your goals.",
   },
   robots: {
