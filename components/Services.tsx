@@ -16,7 +16,7 @@ const practices = [
     icon: Rocket,
     title: "Professional Project Services",
     description:
-      "Whether you need a specialized consultant or a full project team, we provide support that matches your requirements. From planning through execution, our professionals help keep initiatives on track across systems, functions, and geographies.",
+      "Whether you need a specialized consultant or a full project team, we provide support that matches your requirements. From planning through execution, our professionals help deliver initiatives across platforms such as Workday, SAP, Oracle, Salesforce, ServiceNow, and other enterprise systems.",
   },
   {
     icon: Settings,
