@@ -8,19 +8,19 @@ const differentiators = [
     icon: Users2,
     title: "Right-Sized Teams",
     description:
-      "From a single multi-functional resource to full project ownership, we scale to match your actual need. Our approach puts experienced specialists where they matter most, delivering results at every level.",
+      "We build teams around the actual needs of each engagement. That means the right level of support, the right expertise, and a structure that fits the work.",
   },
   {
     icon: Target,
     title: "Outcome Accountability",
     description:
-      "We focus on measurable results, not just activity. Every engagement is structured around clear milestones and defined outcomes, with transparent delivery and consistent accountability.",
+      "We focus on clear milestones, measurable progress, and results that matter to your business. Every engagement is managed with transparency and accountability from start to finish.",
   },
   {
     icon: Wrench,
     title: "Embedded Expertise",
     description:
-      "We work inside your world, not around it. Our practitioners integrate with your teams at the right level, driving real progress from within.",
+      "Our professionals work as a true extension of your team. We integrate into your environment, collaborate closely with stakeholders, and help move work forward in a practical way.",
   },
 ]
 
@@ -47,13 +47,13 @@ export default function RobraDifference() {
           </div>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-4 sm:mb-6 leading-[1.1]">
-            The Robra{" "}
+            A more focused approach to{" "}
             <span className="bg-gradient-to-r from-accent to-accent/70 bg-clip-text text-transparent">
-              Difference
+              enterprise IT support
             </span>
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed font-medium px-4">
-            We build teams around your actual needs, not predefined structures. By aligning the right expertise to the right scope, we stay focused on delivering outcomes that matter.
+            We align the right expertise to the right scope so your team gets the support it needs without unnecessary complexity.
           </p>
         </motion.div>
 
