@@ -1,8 +1,11 @@
-"use client"
-
-import { motion } from "framer-motion"
+import type { Metadata } from "next"
 import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
+
+export const metadata: Metadata = {
+  title: "Privacy Policy | Robra IT",
+  description: "Robra IT privacy policy covering data collection, SMS/10DLC compliance, and your rights.",
+}
 
 export default function PrivacyPolicy() {
   return (
@@ -19,11 +22,7 @@ export default function PrivacyPolicy() {
           Back to Home
         </Link>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
+        <div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
             Privacy Policy
           </h1>
@@ -274,7 +273,7 @@ export default function PrivacyPolicy() {
               </p>
             </section>
           </div>
-        </motion.div>
+        </div>
       </div>
     </main>
   )

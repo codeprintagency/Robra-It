@@ -41,14 +41,14 @@ export default function RobraDifference() {
           viewport={{ once: true }}
           className="text-center mb-12 sm:mb-16 md:mb-20"
         >
-          <div className="inline-flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 bg-gradient-to-r from-accent/15 to-accent/5 rounded-full text-accent text-xs sm:text-sm font-bold mb-4 sm:mb-6 border border-accent/30 shadow-md">
-            <span className="w-2 h-2 bg-accent rounded-full"></span>
+          <div className="inline-flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 bg-gradient-to-r from-primary/10 to-primary/5 rounded-full text-primary text-xs sm:text-sm font-bold mb-4 sm:mb-6 border border-primary/20 shadow-md">
+            <span className="w-2 h-2 bg-primary rounded-full"></span>
             Why Robra IT
           </div>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-4 sm:mb-6 leading-[1.1]">
             A more focused approach to{" "}
-            <span className="bg-gradient-to-r from-accent to-accent/70 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
               enterprise IT support
             </span>
           </h2>
@@ -72,7 +72,7 @@ export default function RobraDifference() {
                 <div className="relative border-2 border-gray-200 bg-white h-full rounded-2xl overflow-hidden hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-2 transition-all duration-300 group p-6 sm:p-8">
                   <div className="flex items-start justify-between mb-4 sm:mb-6">
                     <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center shadow-xl group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
-                      <Icon className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
+                      <Icon className="w-8 h-8 sm:w-10 sm:h-10 text-white" aria-hidden="true" />
                     </div>
                   </div>
                   <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4 group-hover:text-primary transition-colors duration-300">

@@ -26,6 +26,8 @@ export default function Header() {
     }
   }
 
+  const focusStyle = "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+
   return (
     <motion.header
       initial={{ y: -100 }}
@@ -37,11 +39,23 @@ export default function Header() {
           : "bg-white/95 backdrop-blur-md shadow-sm"
       }`}
     >
-      <nav className="container mx-auto px-6 py-3 flex items-center justify-between">
-        {/* Logo */}
+      {/* Fix #1: Skip navigation link */}
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-primary focus:text-white focus:rounded-lg focus:font-semibold focus:text-sm"
+      >
+        Skip to content
+      </a>
+
+      <nav className="container mx-auto px-6 py-3 flex items-center justify-between" aria-label="Main navigation">
+        {/* Fix #2: Logo keyboard accessible */}
         <motion.div
+          role="button"
+          tabIndex={0}
+          aria-label="Go to top of page"
           className="flex items-center cursor-pointer"
           onClick={() => scrollToSection("hero")}
+          onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") scrollToSection("hero") }}
           whileHover={{ scale: 1.03 }}
           transition={{ duration: 0.2 }}
         >
@@ -55,12 +69,12 @@ export default function Header() {
           />
         </motion.div>
 
-        {/* Desktop Navigation */}
-        <ul className="hidden md:flex space-x-8 items-center">
+        {/* Fix #9: Nav buttons with focus-visible styles */}
+        <ul className="hidden md:flex space-x-8 items-center" role="list">
           <li>
             <button
               onClick={() => scrollToSection("hero")}
-              className="text-gray-700 hover:text-primary transition-all duration-200 font-semibold text-sm tracking-wide relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all hover:after:w-full"
+              className={`text-gray-700 hover:text-primary transition-all duration-200 font-semibold text-sm tracking-wide relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all hover:after:w-full rounded-sm ${focusStyle}`}
             >
               Home
             </button>
@@ -68,7 +82,7 @@ export default function Header() {
           <li>
             <button
               onClick={() => scrollToSection("services")}
-              className="text-gray-700 hover:text-primary transition-all duration-200 font-semibold text-sm tracking-wide relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all hover:after:w-full"
+              className={`text-gray-700 hover:text-primary transition-all duration-200 font-semibold text-sm tracking-wide relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all hover:after:w-full rounded-sm ${focusStyle}`}
             >
               Services
             </button>
@@ -76,7 +90,7 @@ export default function Header() {
           <li>
             <button
               onClick={() => scrollToSection("contact")}
-              className="px-8 py-3 bg-gradient-to-r from-primary to-primary/90 text-white rounded-full font-semibold text-sm hover:shadow-2xl hover:shadow-primary/30 hover:scale-105 transition-all duration-300 border border-primary/20"
+              className={`px-8 py-3 bg-gradient-to-r from-primary to-primary/90 text-white rounded-full font-semibold text-sm hover:shadow-2xl hover:shadow-primary/30 hover:scale-105 transition-all duration-300 border border-primary/20 ${focusStyle}`}
             >
               Contact
             </button>
@@ -86,13 +100,15 @@ export default function Header() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="md:hidden p-2 text-gray-700 hover:text-primary transition-colors"
-          aria-label="Toggle menu"
+          className={`md:hidden p-2 text-gray-700 hover:text-primary transition-colors rounded-sm ${focusStyle}`}
+          aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={mobileMenuOpen}
+          aria-controls="mobile-menu"
         >
           {mobileMenuOpen ? (
-            <X className="w-6 h-6" />
+            <X className="w-6 h-6" aria-hidden="true" />
           ) : (
-            <Menu className="w-6 h-6" />
+            <Menu className="w-6 h-6" aria-hidden="true" />
           )}
         </button>
       </nav>
@@ -101,6 +117,7 @@ export default function Header() {
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div
+            id="mobile-menu"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
@@ -108,11 +125,11 @@ export default function Header() {
             className="md:hidden bg-white border-t border-gray-200 overflow-hidden"
           >
             <div className="container mx-auto px-6 py-4">
-              <ul className="space-y-4">
+              <ul className="space-y-4" role="list">
                 <li>
                   <button
                     onClick={() => scrollToSection("hero")}
-                    className="block w-full text-left text-gray-700 hover:text-primary transition-colors font-semibold py-2"
+                    className={`block w-full text-left text-gray-700 hover:text-primary transition-colors font-semibold py-2 rounded-sm ${focusStyle}`}
                   >
                     Home
                   </button>
@@ -120,7 +137,7 @@ export default function Header() {
                 <li>
                   <button
                     onClick={() => scrollToSection("services")}
-                    className="block w-full text-left text-gray-700 hover:text-primary transition-colors font-semibold py-2"
+                    className={`block w-full text-left text-gray-700 hover:text-primary transition-colors font-semibold py-2 rounded-sm ${focusStyle}`}
                   >
                     Services
                   </button>
@@ -128,7 +145,7 @@ export default function Header() {
                 <li>
                   <button
                     onClick={() => scrollToSection("contact")}
-                    className="w-full px-8 py-3 bg-gradient-to-r from-primary to-primary/90 text-white rounded-full font-semibold hover:shadow-xl hover:shadow-primary/30 transition-all duration-300"
+                    className={`w-full px-8 py-3 bg-gradient-to-r from-primary to-primary/90 text-white rounded-full font-semibold hover:shadow-xl hover:shadow-primary/30 transition-all duration-300 ${focusStyle}`}
                   >
                     Contact
                   </button>

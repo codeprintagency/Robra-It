@@ -107,7 +107,7 @@ export default function ContactForm() {
                     <Input
                       id="name"
                       placeholder="John Doe"
-                      className="h-12 focus:ring-2 focus:ring-primary/20 border-gray-300"
+                      className="h-12 focus:ring-2 focus:ring-primary/20 border-gray-400"
                       {...register("name", { required: "Name is required" })}
                     />
                     {errors.name && (
@@ -122,7 +122,7 @@ export default function ContactForm() {
                     <Input
                       id="company"
                       placeholder="Acme Inc."
-                      className="h-12 focus:ring-2 focus:ring-primary/20 border-gray-300"
+                      className="h-12 focus:ring-2 focus:ring-primary/20 border-gray-400"
                       {...register("company", { required: "Company is required" })}
                     />
                     {errors.company && (
@@ -140,7 +140,7 @@ export default function ContactForm() {
                       id="email"
                       type="email"
                       placeholder="john@example.com"
-                      className="h-12 focus:ring-2 focus:ring-primary/20 border-gray-300"
+                      className="h-12 focus:ring-2 focus:ring-primary/20 border-gray-400"
                       {...register("email", {
                         required: "Email is required",
                         pattern: {
@@ -162,7 +162,7 @@ export default function ContactForm() {
                       id="phone"
                       type="tel"
                       placeholder="(555) 123-4567"
-                      className="h-12 focus:ring-2 focus:ring-primary/20 border-gray-300"
+                      className="h-12 focus:ring-2 focus:ring-primary/20 border-gray-400"
                       {...register("phone", { required: "Phone is required" })}
                     />
                     {errors.phone && (
@@ -179,7 +179,7 @@ export default function ContactForm() {
                     id="message"
                     placeholder="Tell us about your project or initiative..."
                     rows={6}
-                    className="focus:ring-2 focus:ring-primary/20 resize-none border-gray-300"
+                    className="focus:ring-2 focus:ring-primary/20 resize-none border-gray-400"
                     {...register("message", { required: "Message is required" })}
                   />
                   {errors.message && (
@@ -218,7 +218,7 @@ export default function ContactForm() {
 
                 {/* Success/Error Messages */}
                 {submitStatus === "success" && (
-                  <div className="flex items-center gap-3 p-4 bg-green-50 border border-green-200 rounded-lg text-green-800">
+                  <div role="alert" className="flex items-center gap-3 p-4 bg-green-50 border border-green-200 rounded-lg text-green-800">
                     <CheckCircle className="w-5 h-5 flex-shrink-0" />
                     <p className="text-sm font-medium">
                       Thank you for your inquiry! We&apos;ll be in touch soon.
@@ -227,7 +227,7 @@ export default function ContactForm() {
                 )}
 
                 {submitStatus === "error" && (
-                  <div className="flex items-center gap-3 p-4 bg-red-50 border border-red-200 rounded-lg text-red-800">
+                  <div role="alert" className="flex items-center gap-3 p-4 bg-red-50 border border-red-200 rounded-lg text-red-800">
                     <AlertCircle className="w-5 h-5 flex-shrink-0" />
                     <p className="text-sm font-medium">
                       Something went wrong. Please try again or email us directly.

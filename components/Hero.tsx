@@ -131,15 +131,24 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      {/* Scroll indicator */}
+      {/* Fix #3: Scroll indicator keyboard accessible */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 1.5 }}
         className="absolute bottom-10 left-1/2 transform -translate-x-1/2 cursor-pointer group"
+        role="button"
+        tabIndex={0}
+        aria-label="Scroll to services"
         onClick={() => {
           const element = document.getElementById("services")
           element?.scrollIntoView({ behavior: "smooth" })
+        }}
+        onKeyDown={(e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            const element = document.getElementById("services")
+            element?.scrollIntoView({ behavior: "smooth" })
+          }
         }}
       >
         <motion.div

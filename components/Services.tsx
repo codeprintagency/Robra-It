@@ -102,7 +102,7 @@ export default function Services() {
                 <Card className="h-full border-2 border-gray-200 bg-white hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/40 hover:-translate-y-1 transition-all duration-300 group">
                   <CardHeader>
                     <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center mb-5 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-lg">
-                      <Icon className="w-8 h-8 text-white" />
+                      <Icon className="w-8 h-8 text-white" aria-hidden="true" />
                     </div>
                     <CardTitle className="text-xl font-bold text-gray-900">
                       {practice.title}
