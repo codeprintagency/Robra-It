@@ -39,7 +39,7 @@ export default function Header() {
           : "bg-white/95 backdrop-blur-md shadow-sm"
       }`}
     >
-      {/* Fix #1: Skip navigation link */}
+      {/* Skip navigation */}
       <a
         href="#main-content"
         className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-primary focus:text-white focus:rounded-lg focus:font-semibold focus:text-sm"
@@ -48,7 +48,7 @@ export default function Header() {
       </a>
 
       <nav className="container mx-auto px-6 py-3 flex items-center justify-between" aria-label="Main navigation">
-        {/* Fix #2: Logo keyboard accessible */}
+        {/* Logo */}
         <motion.div
           role="button"
           tabIndex={0}
@@ -69,7 +69,7 @@ export default function Header() {
           />
         </motion.div>
 
-        {/* Fix #9: Nav buttons with focus-visible styles */}
+        {/* Desktop Navigation */}
         <ul className="hidden md:flex space-x-8 items-center" role="list">
           <li>
             <button

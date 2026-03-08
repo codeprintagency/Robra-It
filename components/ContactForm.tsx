@@ -219,7 +219,7 @@ export default function ContactForm() {
                 {/* Success/Error Messages */}
                 {submitStatus === "success" && (
                   <div role="alert" className="flex items-center gap-3 p-4 bg-green-50 border border-green-200 rounded-lg text-green-800">
-                    <CheckCircle className="w-5 h-5 flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 flex-shrink-0" aria-hidden="true" />
                     <p className="text-sm font-medium">
                       Thank you for your inquiry! We&apos;ll be in touch soon.
                     </p>
@@ -228,7 +228,7 @@ export default function ContactForm() {
 
                 {submitStatus === "error" && (
                   <div role="alert" className="flex items-center gap-3 p-4 bg-red-50 border border-red-200 rounded-lg text-red-800">
-                    <AlertCircle className="w-5 h-5 flex-shrink-0" />
+                    <AlertCircle className="w-5 h-5 flex-shrink-0" aria-hidden="true" />
                     <p className="text-sm font-medium">
                       Something went wrong. Please try again or email us directly.
                     </p>
@@ -249,7 +249,7 @@ export default function ContactForm() {
                   ) : (
                     <>
                       Send Message
-                      <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                      <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
                     </>
                   )}
                 </Button>

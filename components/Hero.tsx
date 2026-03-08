@@ -117,7 +117,7 @@ export default function Hero() {
               className="w-full sm:w-auto text-base sm:text-lg px-8 sm:px-12 py-6 sm:py-7 group bg-gradient-to-r from-primary to-primary/90 hover:shadow-2xl hover:shadow-primary/40 hover:scale-105 transition-all duration-300 font-semibold"
             >
               Explore Our Services
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
             </Button>
             <Button
               onClick={scrollToContact}
@@ -158,7 +158,7 @@ export default function Hero() {
         >
           <span className="text-xs uppercase tracking-widest font-semibold">Scroll</span>
           <div className="p-2 rounded-full border-2 border-gray-300 group-hover:border-primary group-hover:shadow-lg transition-all duration-300">
-            <ChevronDown className="w-4 h-4" />
+            <ChevronDown className="w-4 h-4" aria-hidden="true" />
           </div>
         </motion.div>
       </motion.div>

@@ -26,7 +26,7 @@ const differentiators = [
 
 export default function RobraDifference() {
   return (
-    <section className="py-16 sm:py-24 md:py-32 bg-gradient-to-b from-white via-gray-50/50 to-white relative overflow-hidden">
+    <section id="why-robra" aria-label="Why Robra IT" className="py-16 sm:py-24 md:py-32 bg-gradient-to-b from-white via-gray-50/50 to-white relative overflow-hidden">
       {/* Decorative background */}
       <div className="absolute inset-0 overflow-hidden opacity-30">
         <div className="absolute top-40 left-1/4 w-72 h-72 bg-accent/20 rounded-full filter blur-3xl"></div>

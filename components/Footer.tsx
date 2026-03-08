@@ -21,13 +21,10 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Divider */}
-          <div className="border-t border-gray-700 mb-8" />
-
           {/* Bottom bar */}
           <div className="text-center space-y-4 pt-8 border-t border-gray-700">
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-gray-400">
-              <p>© 2025 Robra IT. All Rights Reserved.</p>
+              <p>© 2026 Robra IT. All Rights Reserved.</p>
               <span className="hidden sm:inline text-gray-600">•</span>
               <a
                 href="/privacy-policy"
