@@ -8,19 +8,19 @@ const differentiators = [
     icon: Users2,
     title: "Right-Sized Teams",
     description:
-      "Tactical experts, not bloated benches. We scope to your actual need and deploy appropriately-sized teams that execute — no SOW fluff, no over-staffed engagements.",
+      "From a single multi-functional resource to full project ownership, we scale to match your actual need. Our approach puts experienced specialists where they matter most, delivering results at every level.",
   },
   {
     icon: Target,
     title: "Outcome Accountability",
     description:
-      "Milestones over timesheets. We stay accountable to outcomes, not hours — delivering measurable transformation with transparent, lean execution.",
+      "We focus on measurable results, not just activity. Every engagement is structured around clear milestones and defined outcomes, with transparent delivery and consistent accountability.",
   },
   {
     icon: Wrench,
     title: "Embedded Expertise",
     description:
-      "We work inside your world, not around it. Our practitioners integrate with your teams at the right level, driving impactful transformation from within.",
+      "We work inside your world, not around it. Our practitioners integrate with your teams at the right level, driving real progress from within.",
   },
 ]
 
@@ -53,7 +53,7 @@ export default function RobraDifference() {
             </span>
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed font-medium px-4">
-            We don&apos;t pad teams. We don&apos;t sell seats. We scope to your need, deploy the right people, and stay accountable to outcomes — not hours.
+            We build teams around your actual needs, not predefined structures. By aligning the right expertise to the right scope, we stay focused on delivering outcomes that matter.
           </p>
         </motion.div>
 

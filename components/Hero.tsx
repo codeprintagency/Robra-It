@@ -97,9 +97,9 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.7 }}
             className="text-lg sm:text-xl md:text-2xl text-gray-700 mb-8 sm:mb-12 leading-relaxed max-w-3xl mx-auto font-medium px-2"
           >
-            From enterprise application management to AI governance and data
-            modernization — Robra IT deploys right-sized expert teams to execute
-            transformation that sticks.
+            From professional project services and enterprise application management
+            to AI governance and data &amp; reporting modernization. Robra IT deploys
+            right-sized expert teams that execute on your organization&apos;s goals.
           </motion.p>
 
           <motion.div

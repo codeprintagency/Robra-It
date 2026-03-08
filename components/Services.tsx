@@ -14,13 +14,13 @@ import {
 const practices = [
   {
     icon: Rocket,
-    title: "PPS — Professional Project Services",
+    title: "Professional Project Services",
     description:
-      "Right-sized tactical project teams embedded to execute defined transformation initiatives — without the SOW fluff.",
+      "Whether you need a single multi-functional consultant or a full project team, we scale to fit. From roadmapping through execution, our specialists deliver results across any technology stack, supporting both domestic and global rollouts.",
   },
   {
     icon: Settings,
-    title: "AMS — Application Managed Services",
+    title: "Application Managed Services",
     description:
       "Ongoing management, optimization, and support of enterprise applications post-go-live across Workday, SAP, Oracle, Salesforce, and more.",
   },
@@ -28,25 +28,25 @@ const practices = [
     icon: Link2,
     title: "Integration Solutions",
     description:
-      "End-to-end integration architecture, build, and management across enterprise ecosystems — API design, middleware, and platform-agnostic execution.",
+      "Full-lifecycle integration architecture, build, and management across your enterprise. API design, middleware orchestration, and platform-agnostic connectivity.",
   },
   {
     icon: Database,
-    title: "Data Services & EDP",
+    title: "Data & Reporting Services",
     description:
-      "Modern data strategy, architecture, engineering, and analytics delivery — from raw data to governed insight using Databricks, Power BI, Alteryx, and more.",
+      "Modern data strategy, architecture, engineering, and reporting delivery. From raw data to governed insight using Databricks, Power BI, Alteryx, and more.",
   },
   {
     icon: BrainCircuit,
     title: "AI Advisory & Governance",
     description:
-      "Structured AI adoption — from strategy through deployment — with guardrails that actually work. Readiness assessments, governance frameworks, and execution support.",
+      "Structured AI adoption from strategy through deployment, with governance that works in practice. Readiness assessments, framework design, and hands-on execution support.",
   },
   {
     icon: Compass,
     title: "Advisory & Transformation",
     description:
-      "Assessment services, PMO & governance, technology rationalization, M&A support, and lean team deployment — the umbrella practice that underpins everything we do.",
+      "OCM advisory, roadmapping, PMO & governance, technology rationalization, and M&A support for domestic and global initiatives. Tech-agnostic, outcome-driven, and built to move.",
   },
 ]
 
@@ -83,8 +83,8 @@ export default function Services() {
           </h2>
 
           <p className="text-base sm:text-lg md:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed font-medium px-4">
-            Six practice areas built around what enterprise IT teams actually need —
-            tactical expertise, lean execution, and measurable outcomes.
+            Six practice areas built around what enterprise IT teams actually need.
+            Tech-agnostic roadmapping and execution, lean teams, and measurable outcomes.
           </p>
         </motion.div>
 

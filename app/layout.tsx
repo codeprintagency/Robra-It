@@ -11,7 +11,7 @@ const ubuntu = Ubuntu({
 
 export const metadata: Metadata = {
   title: "Robra IT | IT Solutions, AMS & Data Services",
-  description: "From enterprise application management to AI governance and data modernization — Robra IT deploys right-sized expert teams to execute transformation that sticks.",
+  description: "From professional project services and enterprise application management to AI governance and data & reporting modernization. Robra IT deploys right-sized expert teams that execute on your organization's goals.",
   keywords: [
     "IT solutions",
     "application managed services",
@@ -32,13 +32,13 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://robrait.com",
     title: "Robra IT | IT Solutions, AMS & Data Services",
-    description: "From enterprise application management to AI governance and data modernization — Robra IT deploys right-sized expert teams to execute transformation that sticks.",
+    description: "From professional project services and enterprise application management to AI governance and data & reporting modernization. Robra IT deploys right-sized expert teams that execute on your organization's goals.",
     siteName: "Robra IT",
   },
   twitter: {
     card: "summary_large_image",
     title: "Robra IT | IT Solutions, AMS & Data Services",
-    description: "From enterprise application management to AI governance and data modernization — Robra IT deploys right-sized expert teams to execute transformation that sticks.",
+    description: "From professional project services and enterprise application management to AI governance and data & reporting modernization. Robra IT deploys right-sized expert teams that execute on your organization's goals.",
   },
   robots: {
     index: true,

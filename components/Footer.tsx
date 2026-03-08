@@ -17,7 +17,7 @@ export default function Footer() {
           <div className="text-center mb-8 sm:mb-12">
             <h3 className="text-2xl font-bold text-white mb-4">Robra IT</h3>
             <p className="text-gray-400 text-sm max-w-md mx-auto">
-              Your business, our expertise — deploying right-sized teams to execute transformation that sticks
+              Your business, our expertise. Right-sized teams that deliver results.
             </p>
           </div>
 
