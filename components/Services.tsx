@@ -16,37 +16,37 @@ const practices = [
     icon: Rocket,
     title: "Professional Project Services",
     description:
-      "Whether you need a specialized consultant or a full project team, we provide support that matches your requirements. From planning through execution, our professionals help deliver initiatives across platforms such as Workday, SAP, Oracle, Salesforce, ServiceNow, and other enterprise systems.",
+      "Whether you need a specialized consultant or a full project team, we provide support that matches your requirements. From planning through execution, our professionals help deliver initiatives in environments that rely on Workday, SAP, Oracle, Salesforce, ServiceNow, and other enterprise systems.",
   },
   {
     icon: Settings,
     title: "Application Managed Services",
     description:
-      "We provide ongoing support, optimization, and operational management for enterprise applications after go live. Our team helps organizations improve performance, maintain stability, and get more value from platforms such as Workday, SAP, Oracle, Salesforce, and others.",
+      "We provide ongoing support, optimization, and operational management for enterprise applications after go live. Our team helps organizations improve performance, maintain stability, and get more value from systems including Workday, SAP, Oracle, Salesforce, and related technologies.",
   },
   {
     icon: Link2,
     title: "Integration Solutions",
     description:
-      "We design, build, and support integrations that connect critical systems across your business. From API strategy to middleware and ongoing management, we help create reliable connectivity across your environment.",
+      "We design, build, and support integrations that connect critical systems across your business. From API strategy to middleware and ongoing management, we help create reliable connectivity across complex enterprise environments.",
   },
   {
     icon: Database,
     title: "Data and Reporting Services",
     description:
-      "We help organizations turn fragmented data into clear reporting and useful insight. Our team supports modern data strategy, architecture, engineering, and visualization across platforms such as Databricks, Power BI, Alteryx, and more.",
+      "We help organizations turn fragmented data into clear reporting and useful insight. Our team supports modern data strategy, architecture, engineering, and visualization using tools like Databricks, Power BI, Alteryx, and other analytics technologies.",
   },
   {
     icon: BrainCircuit,
     title: "AI Advisory and Governance",
     description:
-      "We help organizations approach AI with structure and accountability. From readiness assessments and governance frameworks to implementation support, we guide practical adoption that aligns with business and compliance needs.",
+      "We help organizations approach AI with structure and accountability. From readiness assessments and governance frameworks to implementation support, we guide practical adoption across business, data, and technology teams.",
   },
   {
     icon: Compass,
     title: "Advisory and Transformation",
     description:
-      "We support transformation efforts with strategic advisory, roadmapping, PMO support, governance, technology rationalization, and M&A execution support. Our work is grounded in business priorities and built for real-world delivery.",
+      "We support transformation efforts with strategic advisory, roadmapping, PMO support, governance, technology rationalization, and M&A execution support. Our work is grounded in business priorities and shaped around real operational needs.",
   },
 ]
 
